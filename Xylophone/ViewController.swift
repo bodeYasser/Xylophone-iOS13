@@ -26,11 +26,11 @@ class ViewController: UIViewController {
         
         guard  let url = Bundle.main.url(forResource: buttonName, withExtension: "wav") else {return}
        do {
+           
+           //make sound plays when mobile is silent or in background
             //try AVAudioSession.sharedInstance().setCategory(.playback, mode:  .default)
            // try AVAudioSession.sharedInstance().setActive(true)
-           //player = try AVAudioPlayer(contentsOf: path)
             player = try AVAudioPlayer(contentsOf: url)
-            //player.prepareToPlay()
            player?.play()
        }
         catch { print("er00000ror") }
