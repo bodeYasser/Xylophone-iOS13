@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8958176A28D5F1F5005A1D01 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8958176828D5F1E1005A1D01 /* AVFoundation.framework */; };
 		AD937BF622C61DBB002E2D88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD937BF522C61DBB002E2D88 /* AppDelegate.swift */; };
 		AD937BF822C61DBB002E2D88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD937BF722C61DBB002E2D88 /* SceneDelegate.swift */; };
 		AD937BFA22C61DBB002E2D88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD937BF922C61DBB002E2D88 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8958176828D5F1E1005A1D01 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AD937BF222C61DBB002E2D88 /* Xylophone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xylophone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD937BF522C61DBB002E2D88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD937BF722C61DBB002E2D88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,18 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8958176A28D5F1F5005A1D01 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8958176728D5F1E1005A1D01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8958176828D5F1E1005A1D01 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD937BE922C61DBB002E2D88 = {
 			isa = PBXGroup;
 			children = (
 				ADE587E822CB4D36007F0F9A /* README.md */,
 				AD937BF422C61DBB002E2D88 /* Xylophone */,
 				AD937BF322C61DBB002E2D88 /* Products */,
+				8958176728D5F1E1005A1D01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,7 +138,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = "The App Brewery";
 				TargetAttributes = {
 					AD937BF122C61DBB002E2D88 = {
@@ -224,6 +236,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -284,6 +297,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
